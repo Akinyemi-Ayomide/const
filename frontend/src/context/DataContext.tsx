@@ -1,8 +1,8 @@
 import { createContext, useContext, useState } from 'react';
-import featureData from '../assets/Feature'; // ✅ Ensure this path matches your file
+import { feature } from '../assets/Feature'; // ✅ Ensure this path matches your file
 
 interface DataContextType {
-  features: typeof featureData;
+  features: typeof feature;
 }
 
 const DataContext = createContext<DataContextType | undefined>(undefined);
@@ -10,8 +10,8 @@ const DataContext = createContext<DataContextType | undefined>(undefined);
 export const DataProvider: React.FC<{ children: React.ReactNode }> = ({
   children,
 }) => {
-  const [features] = useState(featureData); // ✅ Use the imported array
-
+  const [features] = useState(feature); // ✅ Use the imported array
+  console.log('feature', feature);
   return (
     <DataContext.Provider value={{ features }}>{children}</DataContext.Provider>
   );
