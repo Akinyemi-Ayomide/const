@@ -14,7 +14,7 @@ const Details = () => {
     <div>
       <h1 className="font-bold text-3xl capitalize md:text-5xl mx-2 mt-20">{data.name}</h1>
       <hr className="my-2  h-5 bg-gray-700" />
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 w-full h-auto gap-4 justify-center">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 w-full h-auto gap-4 justify-center">
         {data.img.map((image, index) => (
           <div
             key={index}
