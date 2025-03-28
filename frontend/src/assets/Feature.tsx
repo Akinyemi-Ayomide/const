@@ -27,7 +27,7 @@ import img_34 from '../assets/img_34.jpg';
 import img_35 from '../assets/img_35.jpg';
 import img_36 from '../assets/img_36.jpg';
 
-export const feature = [
+export const Feature = [
   {
     id: 1,
     name: 'Foundational work: Excavation of pad footings and trip',

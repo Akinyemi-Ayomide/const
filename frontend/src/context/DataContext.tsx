@@ -1,5 +1,5 @@
 import { createContext, useContext, useState } from 'react';
-import featureData from '../assets/features'; // ✅ Ensure this path matches your file
+import featureData from '../assets/Feature'; // ✅ Ensure this path matches your file
 
 interface DataContextType {
   features: typeof featureData;

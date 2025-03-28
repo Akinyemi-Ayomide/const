@@ -1,6 +1,5 @@
-import one from '../assets/one.jpg';
 import two from '../assets/two.jpg';
-import three from '../assets/three.jpg';
+
 const OurService = () => {
   return (
     <div className="mt-20">
